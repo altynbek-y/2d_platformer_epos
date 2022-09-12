@@ -1,1 +1,1 @@
-# 2d_platformer_epos
+# Cyber Epos (Кибер Эпос)
