@@ -31,7 +31,10 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 66, 0, 0, 67, 0, 0, 65536, 0, 0, 655
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 772, 549 )
 
-[node name="Camera2D" parent="Player" index="2"]
+[node name="AnimatedSprite" parent="Player" index="0"]
+frame = 4
+
+[node name="Camera2D" parent="Player" index="3"]
 position = Vector2( 0, -96 )
 limit_right = 5440
 

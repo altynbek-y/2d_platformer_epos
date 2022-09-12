@@ -7,6 +7,16 @@ func _on_EnemyDetector_area_entered(area):
 	
 func _on_EnemyDetector_body_entered(body):
 	queue_free()
+	
+func _process(delta):
+	if Input.is_action_pressed("move_right"):
+		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.play("run")
+	elif Input.is_action_pressed("move_left"):
+		$AnimatedSprite.flip_h = true
+		$AnimatedSprite.play("run")
+	else:
+		$AnimatedSprite.stop()
 
 func _physics_process(delta):
 	var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
