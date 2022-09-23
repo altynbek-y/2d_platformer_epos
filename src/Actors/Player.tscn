@@ -34,7 +34,7 @@ position = Vector2( 0, -68 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 11 )
 animation = "run"
-frame = 5
+frame = 1
 playing = true
 
 [node name="Player" type="Sprite" parent="."]
