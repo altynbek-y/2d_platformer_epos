@@ -4,7 +4,7 @@
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/background.png" type="Texture" id=4]
 
-[node name="LevelTemplate" type="Node2D"]
+[node name="Level02" type="Node2D"]
 __meta__ = {
 "_edit_vertical_guides_": [ 5440.0 ]
 }
@@ -31,7 +31,7 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 65536,
 position = Vector2( 772, 549 )
 
 [node name="AnimatedSprite" parent="Player" index="0"]
-frame = 3
+frame = 6
 
 [node name="Camera2D" parent="Player" index="3"]
 position = Vector2( 0, -96 )

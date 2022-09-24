@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://assets/background.png" type="Texture" id=4]
 [ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Portal2D.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/Levels/Level02.tscn" type="PackedScene" id=7]
 
 [node name="LevelTemplate" type="Node2D"]
 __meta__ = {
@@ -35,7 +34,7 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 66, 0, 0, 67, 0, 0, 65536, 0, 0, 655
 position = Vector2( 772, 549 )
 
 [node name="AnimatedSprite" parent="Player" index="0"]
-frame = 2
+frame = 5
 
 [node name="Camera2D" parent="Player" index="3"]
 position = Vector2( 0, -96 )
@@ -59,6 +58,5 @@ position = Vector2( 1263, 678 )
 
 [node name="Portal2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1833, 725 )
-next_scene = ExtResource( 7 )
 
 [editable path="Player"]
